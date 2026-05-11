@@ -1,0 +1,25 @@
+interface TextcardProps {
+  time?: string
+  title: string
+  event?: string
+  content: string[]
+}
+const Textcard = ({ time, title, event, content }: TextcardProps) => {
+  return (
+    <div
+      data-testid='textcard'
+      className='flex flex-col bg-[#252525] px-2 py-2 text-xs md:px-5 md:py-5 md:text-base'
+    >
+      <span className='text-accent'>{time}</span>
+      <span className='text-text font-bold'>{title}</span>
+      <span className='text-accent'>{event}</span>
+      <ul className='text-text-muted list-inside list-disc'>
+        {content.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+export default Textcard
