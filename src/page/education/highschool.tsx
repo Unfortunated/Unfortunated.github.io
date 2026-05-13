@@ -4,9 +4,10 @@ import Button from '../../component/button'
 import { useNavigate } from 'react-router'
 import { BookOpenText } from 'lucide-react'
 import Textcard from '../../component/textcard'
-import highschool from '../../assets/highschool.svg'
+import { educationData } from '../../data/education'
 
 function Highschool() {
+  const data = educationData[0]
   const nav = useNavigate()
   return (
     <div className='flex min-h-screen w-full flex-col'>
@@ -19,22 +20,20 @@ function Highschool() {
               nav('/education')
             }}
           >
-            <div className='ring-accent rounded-full p-4 ring-4'>
-              <BookOpenText className='stroke-accent h-4 w-4 md:h-9 md:w-9' />
+            <div className='ring-accent rounded-full p-2 ring-2 md:p-4 md:ring-4'>
+              <BookOpenText className='stroke-accent h-6 w-6 md:h-9 md:w-9' />
             </div>
           </Button>
-          <div className='text-lg font-bold md:text-xl'>Graduated 2022</div>
+          <div className='text-lg font-bold md:text-xl'>
+            Graduated {data.graduationYear}
+          </div>
         </div>
         <div className='flex flex-col items-center gap-5 md:flex-row md:items-start'>
-          <img src={highschool} className='3xl:w-100 w-48' />
+          <img src={data.img} className='3xl:w-100 w-48' />
           <Textcard
-            time='2019 - 2022'
-            title='Nawaminthrachinuthit Triamudomsuksanomklao School (NTUN)'
-            content={[
-              'Studied in Science and Math Elective in English Program',
-              'Elected as class representative consecutively for 3 years.',
-              'Participated in English debate club consecutively for 3 years.',
-            ]}
+            time={data.time}
+            title={data.institution}
+            content={data.content}
           />
         </div>
       </div>
