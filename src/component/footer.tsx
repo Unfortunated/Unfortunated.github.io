@@ -15,17 +15,30 @@ const Footer = () => {
           <Button onClick={() => {}}>
             <Mail className='h-5 w-5 md:h-9 md:w-9' />
           </Button>
-          <Button onClick={() => {}}>
+          <Button
+            onClick={() => {
+              window.location.href = 'https://github.com/Unfortunated'
+            }}
+          >
             <img
               src={githubLogo}
               alt='github'
               className='h-5 w-5 md:h-9 md:w-9'
             />
           </Button>
-          <Button onClick={() => {}}>
+          <Button
+            onClick={() => {
+              window.location.href =
+                'https://www.hackerrank.com/profile/thanyathornwien1'
+            }}
+          >
             <span className='text-sm md:text-base'>HackerRank</span>
           </Button>
-          <Button onClick={() => {}}>
+          <Button
+            onClick={() => {
+              window.location.href = 'https://leetcode.com/u/mrunfortunate/'
+            }}
+          >
             <span className='text-sm md:text-base'>LeetCode</span>
           </Button>
         </div>
