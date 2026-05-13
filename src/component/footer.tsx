@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div
       data-testid='footer'
-      className='bg-[#252525] px-5 py-2 md:px-10 md:py-5'
+      className='mt-auto bg-[#252525] px-5 py-2 md:px-10 md:py-5'
     >
       <div className='flex flex-row justify-between'>
         <div className='flex gap-3 text-sm md:gap-4 md:text-lg'>

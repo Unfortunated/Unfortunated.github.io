@@ -1,3 +1,4 @@
+@import 'tailwindcss';
 @font-face {
   font-family: 'Roboto';
   src: url('src/frontend/ui/assets/fonts/Roboto-Regular.ttf') format('truetype');
@@ -11,9 +12,8 @@
   font-style: normal;
 }
 
-@import 'tailwindcss';
-
 @theme {
+  --breakpoint-3xl: 2000px;
   --color-bg: #141414;
   --color-border: #2a2a2a;
   --color-code-bg: #1e1e1e;
@@ -24,9 +24,6 @@
   --color-text: #ffffff;
   --color-text-muted: #cecece;
   --color-text-cyan: #6ce0e0;
-}
-
-@theme {
   --font-roboto: 'Roboto', system-ui, sans-serif;
 }
 

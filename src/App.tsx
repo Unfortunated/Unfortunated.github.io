@@ -15,12 +15,12 @@ import List from './component/list'
 
 function App() {
   return (
-    <div className='flex h-screen w-full flex-col justify-between'>
+    <div className='flex min-h-screen w-full flex-col'>
       <Header />
-      <div className='max-w-8xl mx-auto flex w-full flex-col px-10'>
-        <div className='flex flex-row items-center justify-center gap-20'>
-          <img src={roundphoto} />
-          <div className='flex flex-col text-xl'>
+      <div className='max-w-8xl mx-auto my-auto flex w-full flex-col gap-5 px-5 md:px-10'>
+        <div className='flex flex-col items-center justify-center gap-2 md:flex-row md:gap-20 xl:gap-50'>
+          <img src={roundphoto} className='3xl:w-xl w-sm' />
+          <div className='flex flex-col text-xs md:text-xl xl:text-2xl'>
             <span>
               Hello, I am Paopao, an undergraduate from Chulalongkorn
               University.
@@ -33,14 +33,14 @@ function App() {
             </span>
           </div>
         </div>
-        <div className='flex flex-row justify-between px-60'>
-          <div className='flex flex-col items-center gap-5 text-4xl'>
+        <div className='3xl:gap-180 mx-auto flex flex-col justify-between md:flex-row md:gap-125'>
+          <div className='flex flex-col items-center gap-5 text-lg md:text-4xl'>
             <List
               title='Programming Languages'
               imgSrc={[ts, py, java, js, terminal]}
             />
           </div>
-          <div className='flex flex-col items-center gap-5 text-4xl'>
+          <div className='flex flex-col items-center gap-5 text-lg md:text-4xl'>
             <List
               title='Technologies'
               imgSrc={[react, playwright, jest, postman, figma]}
