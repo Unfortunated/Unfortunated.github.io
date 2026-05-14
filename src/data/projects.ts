@@ -40,7 +40,7 @@ export const recentProj: Project[] = [
       'Built reusable components including a carousel, content cards, and blurred background navigation',
       'Tech Stack: React, Vite, TypeScript, React-Router',
     ],
-    link: 'https://github.com/Unfortunated/portfolio',
+    link: 'https://github.com/Unfortunated/Unfortunated.github.io',
     repoTitle: 'portfolio',
   },
 ]
