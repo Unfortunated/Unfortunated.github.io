@@ -30,7 +30,7 @@ function Bachelor() {
         </div>
         <div className='flex flex-col gap-10'>
           <div className='flex flex-col items-center gap-5 md:flex-row md:items-start'>
-            <img src={cu.img} className='3xl:w-100 w-48' />
+            <img src={cu.img} className='3xl:w-100 w-48' loading='lazy' />
             <Textcard
               time={cu.time}
               title={cu.institution}

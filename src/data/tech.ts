@@ -8,7 +8,7 @@ import jest from '../assets/jest.svg'
 import playwright from '../assets/playwright.svg'
 import postman from '../assets/postman.svg'
 import react from '../assets/react.svg'
-import roundphoto from '../assets/roundphoto.svg'
+import roundphoto from '../assets/roundphoto.png'
 
 export const language = [ts, py, java, js, terminal]
 export const tech = [react, playwright, jest, postman, figma]

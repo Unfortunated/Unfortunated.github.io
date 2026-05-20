@@ -20,6 +20,7 @@ function Employment() {
             <img
               src={data[0].img}
               className='3xl:w-100 w-48 shrink-0 object-cover'
+              loading='lazy'
             />
           </div>
         </div>

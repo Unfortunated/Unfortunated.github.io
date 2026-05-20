@@ -1,7 +1,7 @@
-import act from '../assets/act.svg'
-import vlvu from '../assets/vlvu.svg'
-import oph from '../assets/oph.svg'
-import work from '../assets/work.svg'
+import act from '../assets/act.jpg'
+import vlvu from '../assets/vlvu.jpg'
+import oph from '../assets/oph.jpg'
+import work from '../assets/work.jpg'
 
 export const employment = [
   {

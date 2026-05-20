@@ -19,7 +19,7 @@ function Experience() {
           }}
           className='relative p-0'
         >
-          <img src={extPic} className='h-80 blur-lg md:h-135' />
+          <img src={extPic} className='h-80 blur-lg md:h-135' loading='lazy' />
           <div className='absolute inset-0 flex flex-col items-center justify-center text-sm font-bold text-white sm:text-base md:text-xl'>
             <span className='text-md md:text-3xl'>
               Extracurricular Activities
@@ -33,7 +33,7 @@ function Experience() {
           }}
           className='relative p-0'
         >
-          <img src={workPic} className='h-80 blur-lg md:h-135' />
+          <img src={workPic} className='h-80 blur-lg md:h-135' loading='lazy' />
           <div className='absolute inset-0 flex flex-col items-center justify-center font-bold text-white sm:text-base'>
             <span className='text-md md:text-3xl'>Internship & Employment</span>
             <span className='text-sm md:text-xl'>1 role: May–Aug 2025</span>

@@ -25,6 +25,7 @@ const Carousel = ({ projects }: CarouselProps) => {
             src={currentProject.imgSrc}
             alt={currentProject.title}
             className='3xl:h-90 3xl:w-90 h-45 w-45'
+            loading='lazy'
           />
         </div>
         <Button onClick={nextSlide}>
@@ -38,7 +39,13 @@ const Carousel = ({ projects }: CarouselProps) => {
             <li key={index}>{content}</li>
           ))}
           <li>
-            Github: <a href={currentProject.link}>{currentProject.repoTitle}</a>
+            Github:{' '}
+            <a
+              href={currentProject.link}
+              className='underline underline-offset-2'
+            >
+              {currentProject.repoTitle}
+            </a>
           </li>
         </ul>
       </div>

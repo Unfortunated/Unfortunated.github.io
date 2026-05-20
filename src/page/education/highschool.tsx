@@ -29,7 +29,7 @@ function Highschool() {
           </div>
         </div>
         <div className='flex flex-col items-center gap-5 md:flex-row md:items-start'>
-          <img src={data.img} className='3xl:w-100 w-48' />
+          <img src={data.img} className='3xl:w-100 w-48' loading='lazy' />
           <Textcard
             time={data.time}
             title={data.institution}

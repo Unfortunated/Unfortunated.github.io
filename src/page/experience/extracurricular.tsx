@@ -14,6 +14,7 @@ function Extracurricular() {
             <img
               src={data[0].img}
               className='3xl:w-100 w-48 shrink-0 object-cover'
+              loading='lazy'
             />
             <Textcard
               time={data[0].time}
@@ -32,12 +33,14 @@ function Extracurricular() {
             <img
               src={data[1].img}
               className='3xl:w-100 w-48 shrink-0 object-cover'
+              loading='lazy'
             />
           </div>
           <div className='flex flex-col items-center gap-5 md:flex-row md:items-start'>
             <img
               src={data[2].img}
               className='3xl:w-100 w-48 shrink-0 object-cover'
+              loading='lazy'
             />
             <Textcard
               time={data[2].time}
