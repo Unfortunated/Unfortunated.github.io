@@ -1,6 +1,6 @@
-import highschool from '../assets/highschool.svg'
-import cu from '../assets/cu.svg'
-import liu from '../assets/liu.svg'
+import highschool from '../assets/highschool.jpg'
+import cu from '../assets/cu.jpg'
+import liu from '../assets/liu.jpg'
 export const educationData = [
   {
     id: 'highschool',
