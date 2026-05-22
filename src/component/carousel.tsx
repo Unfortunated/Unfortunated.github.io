@@ -25,7 +25,6 @@ const Carousel = ({ projects }: CarouselProps) => {
             src={currentProject.imgSrc}
             alt={currentProject.title}
             className='3xl:h-90 3xl:w-90 h-45 w-45'
-            loading='lazy'
           />
         </div>
         <Button onClick={nextSlide}>
