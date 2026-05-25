@@ -15,12 +15,18 @@ const Carousel = ({ projects }: CarouselProps) => {
   }
   const currentProject = projects[currentIndex]
   return (
-    <div data-testid='carouselbox' className='flex flex-col items-center gap-4'>
-      <div className='flex flex-row items-center gap-5 md:gap-20'>
+    <div data-testid='carouselBox' className='flex flex-col items-center gap-4'>
+      <div
+        className='flex flex-row items-center gap-5 md:gap-20'
+        data-testid='carousel'
+      >
         <Button onClick={prevSlide}>
-          <CircleChevronLeft className='fill-text-muted stroke-black' />
+          <CircleChevronLeft
+            className='fill-text-muted stroke-black'
+            data-testid='prevSlide'
+          />
         </Button>
-        <div data-testid='carousel'>
+        <div>
           <img
             src={currentProject.imgSrc}
             alt={currentProject.title}
@@ -29,10 +35,13 @@ const Carousel = ({ projects }: CarouselProps) => {
           />
         </div>
         <Button onClick={nextSlide}>
-          <CircleChevronRight className='fill-text-muted stroke-black' />
+          <CircleChevronRight
+            className='fill-text-muted stroke-black'
+            data-testid='nextSlide'
+          />
         </Button>
       </div>
-      <div className='px-4 md:px-0'>
+      <div className='px-4 md:px-0' data-testid='carouselText'>
         <div className='font-bold'>{currentProject.title}</div>
         <ul className='list-inside list-disc text-xs md:text-base'>
           {currentProject.content.map((content, index) => (
