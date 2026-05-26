@@ -3,7 +3,15 @@ import { Mail } from 'lucide-react'
 import githubLogo from '../assets/GitHub_Invertocat_White.svg'
 import reactLogo from '../assets/react.svg'
 import viteLogo from '../assets/vite.svg'
-const Footer = () => {
+interface FooterProps {
+  onNavigate?: (url: string) => void
+}
+
+const Footer = ({
+  onNavigate = (url) => {
+    window.location.href = url
+  },
+}: FooterProps) => {
   return (
     <div
       data-testid='footer'
@@ -13,33 +21,31 @@ const Footer = () => {
         <div className='flex gap-3 text-sm md:gap-4 md:text-lg'>
           <div className='text-sm md:text-xl'>Learn more about me:</div>
           <Button onClick={() => {}}>
-            <Mail className='h-5 w-5 md:h-9 md:w-9' />
+            <Mail className='h-5 w-5 md:h-9 md:w-9' data-testid='mail' />
           </Button>
-          <Button
-            onClick={() => {
-              window.location.href = 'https://github.com/Unfortunated'
-            }}
-          >
+          <Button onClick={() => onNavigate('https://github.com/Unfortunated')}>
             <img
               src={githubLogo}
               alt='github'
               className='h-5 w-5 md:h-9 md:w-9'
+              data-testid='github'
             />
           </Button>
           <Button
-            onClick={() => {
-              window.location.href =
-                'https://www.hackerrank.com/profile/thanyathornwien1'
-            }}
+            onClick={() =>
+              onNavigate('https://www.hackerrank.com/profile/thanyathornwien1')
+            }
           >
-            <span className='text-sm md:text-base'>HackerRank</span>
+            <span className='text-sm md:text-base' data-testid='hackerrank'>
+              HackerrRank
+            </span>
           </Button>
           <Button
-            onClick={() => {
-              window.location.href = 'https://leetcode.com/u/mrunfortunate/'
-            }}
+            onClick={() => onNavigate('https://leetcode.com/u/mrunfortunate/')}
           >
-            <span className='text-sm md:text-base'>LeetCode</span>
+            <span className='text-sm md:text-base' data-testid='leetcode'>
+              LeetCode
+            </span>
           </Button>
         </div>
         <div className='hidden gap-4 md:flex'>
